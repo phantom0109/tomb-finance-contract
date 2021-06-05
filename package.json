@@ -1,0 +1,18 @@
+{
+  "name": "Peak_Finance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx solcjs --bin --optimize --optimize-runs 999999 --include-path node_modules/ -o build/ --base-path ./contracts ./contracts/Peak.sol", 
+    "build-tshare": "npx solcjs --bin --optimize --optimize-runs 999999 --include-path node_modules/ -o build/ --base-path ./contracts ./contracts/TShare.sol",
+    "build-tbond": "npx solcjs --bin --optimize --optimize-runs 999999 --include-path node_modules/ -o build/ --base-path ./contracts ./contracts/TBond.sol"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "solc": "0.6.12"
+  }
+}
